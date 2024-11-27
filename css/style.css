@@ -3,23 +3,29 @@
   padding: 0;
 }
 
-ul {
+ul.parent {
   list-style: none;
-}
-
-ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: grey;
 }
-ul li {
-  padding: 10px;
-  text-transform: capitalize;
+ul.parent li {
+  position: relative;
 }
-ul a {
+ul.parent li a {
+  padding: 10px;
+  text-transform: uppercase;
   text-decoration: none;
+  font-size: 18px;
   color: #fff;
 }
-ul a:hover {
+ul.parent li a:hover {
   color: red;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+}
+ul.parent li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

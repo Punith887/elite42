@@ -1,24 +1,34 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
-
-ul{
+ul.parent
+{
     list-style: none;
-}
-ul{
-    display:flex;
-    justify-content: flex-end;
-    background-color: grey;
+    display: flex;
+    justify-content: center;
+    background-color:grey;
     li{
-        padding: 10px;
-        text-transform:capitalize;
-    }
-    a{
-        text-decoration: none;
-        color: #fff;
+        position: relative;
+        a{
+            padding:10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            &:hover{
+                color:red;
+            }
+        }
+        ul{
+            position: absolute;
+            top: 24px;
+            display: none;
+        }
         &:hover{
-            color: red;
+            ul{
+                display: block;
+            }
         }
     }
 }
