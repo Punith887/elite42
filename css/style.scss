@@ -5,20 +5,19 @@
 
 ul{
     list-style: none;
-}
-ul{
-    display:flex;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
     background-color: grey;
+    
     li{
-        padding: 10px;
-        text-transform:capitalize;
-    }
-    a{
+        position: 10px;
+        text-transform: uppercase;
         text-decoration: none;
+        font-size: 20px;
         color: #fff;
         &:hover{
             color: red;
         }
-    }
+    } 
+    
 }
