@@ -2,22 +2,73 @@
     margin: 0;
     padding: 0;
 }
-
 ul{
     list-style: none;
+}
+ul.parent{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding: 10px;
     background-color: grey;
     
-    li{
-        position: 10px;
+li{
+    position: relative;
+    a{
+        padding: 5px;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 25px;
         color: #fff;
+        background: gold;
         &:hover{
             color: red;
         }
-    } 
-    
+    }
+    ul{
+        position: absolute;
+        display: none;
+        background-color: grey;
+        width:150px;
+        top:24px;
+    }
+    &:hover{
+        ul{
+            display: block;
+        }
+    }
+}
+}
+
+.content{
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px;
+        justify-content: space-between;
+        
+        li{
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            position: relative;
+            button{
+                position: absolute;
+                bottom:0;
+                width: 100%;
+                border:none;
+                background-color: green;
+                &:hover{
+                    color:aqua;
+                    cursor: pointer;
+                }
+
+            }
+            img{
+                height: 160px;
+                width: 180px;
+                position: absolute;
+                bottom: 20px;
+            }
+        }
+    }
 }
