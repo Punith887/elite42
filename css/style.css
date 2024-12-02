@@ -1,0 +1,89 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.parent {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: grey;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  background: grey;
+}
+ul.parent li a:hover {
+  color: red;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  width: 100px;
+  top: 24px;
+  background-color: grey;
+}
+ul.parent li:hover ul {
+  display: block;
+}
+
+.header {
+  padding: 10px;
+  background-image: url(../images/ecommerce-online-shopping-seamless-background-pattern-vector-illustration-36937192.webp);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.content .products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-between;
+}
+.content .products li {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  position: relative;
+}
+.content .products li p {
+  text-align: center;
+  cursor: pointer;
+}
+.content .products li:hover {
+  color: red;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  text-transform: uppercase;
+  background-color: gold;
+}
+.content .products li button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.content .products li img {
+  height: 160px;
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+}
+
+body {
+  background-color: grey;
+}/*# sourceMappingURL=style.css.map */
